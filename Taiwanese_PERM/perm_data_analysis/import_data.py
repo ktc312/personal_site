@@ -6,28 +6,25 @@ import os
 import datetime
 import data_cleaning
 import download_data
+import csv
 
-data_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'tw_perm_data_analysis/')
+data_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'perm_data_analysis/')
 
 
 def read_csv_to_list(file_name):
-    with open(data_path+'data/'+file_name) as f:
-        the_list = [line.rstrip('\n') for line in f]
-    list_of_lists = []
-    for i in the_list:
-        the_list = i.split(',')
-        list_of_lists.append(the_list)
-    final_list = []
-    for i in list_of_lists:
-        list_sliced = [i[0][2:-1], i[1][2:-2]]
-        final_list.append(list_sliced)
-    return final_list
+    with open(data_path + 'data/' + file_name) as csvfile:
+        reader = csv.reader(csvfile)
+        out_list = []
+        for row in reader:
+            out_list.append([row[0], row[1]])
+    return out_list
 
 
 def list_to_csv(the_list, file_name):
-    f = open(data_path + 'data/' + file_name, "w")
-    f.write("\n".join(map(lambda x: str(x), the_list)))
-    f.close()
+    with open(data_path + 'data/' + file_name, 'wb') as csvfile:
+        wr = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
+        for row in the_list:
+            wr.writerow(row)
 
 
 def logging_updates(rows_before, found_rows, new_rows):
@@ -93,7 +90,7 @@ def import_main():
     data_cleaning.clean_case_status(appended_data, 'Case_Status')
 
     # Separate State and City
-    data_cleaning.separate_tate_city(appended_data, 'City_State')
+    data_cleaning.separate_state_city(appended_data, 'City_State')
 
     # Clean employer name
     data_cleaning.clean_employer_name(appended_data, 'Employer')

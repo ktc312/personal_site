@@ -1,13 +1,13 @@
 ,Count,Salary
-count,,1251.0
-mean,,83382.0856275
-std,,37367.5375969
+count,,1256.0
+mean,,83507.6402229
+std,,37380.6035364
 min,,16016.0
-25%,,57595.0
-50%,,82368.0
-75%,,107964.5
+25%,,57622.0
+50%,,82409.5
+75%,,108034.75
 max,,250000.0
-CA,632.0,
+CA,637.0,
 TX,120.0,
 NY,95.0,
 WA,68.0,
@@ -26,23 +26,23 @@ CT,,100851.428571
 IN,,97530.51
 LA,,96997.3333333
 AR,,93406.3333333
-CA,,93171.4356646
-Intel Corporation,38.0,
-Google Inc.,28.0,
+CA,,93342.1575196
+Intel Corporation,39.0,
+Google Inc,28.0,
 Microsoft Corporation,23.0,
-Apple Inc.,18.0,
+Apple Inc,18.0,
+Defender Services Inc,17.0,
 Amazon Corporate Llc,17.0,
-Defender Services Inc.,17.0,
-Yahoo Inc.,15.0,
-Muy Hamburger Partners Llc,12.0,
-Mediatek Usa Inc.,12.0,
-Super Micro Computer Inc.,12.0,
-Guam Healthcare Development Inc.,,250000.0
+Yahoo Inc,15.0,
+Pacpizzallc,12.0,
+Mediatek Usa Inc,12.0,
+Super Micro Computer Inc,12.0,
+Guam Healthcare Development Inc,,250000.0
 Prophetstor Data Services Inc,,220251.0
-Yang & Wang P.c.,,213970.0
+Yang & Wang Pc,,213970.0
 Cienet Technologies Inc,,213803.0
 Indiana University,,205000.0
-Ardan Properties Inc.,,204000.0
+Ardan Properties Inc,,204000.0
 Grifols Diagnostic Solutions,,190620.0
 University Of Kansas,,180000.0
 Memorial Resource Development Corp,,175594.0

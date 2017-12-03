@@ -22,8 +22,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name='index'),
     url(r'^tw_perm/$', tw_views.index, name='tw_index'),
-    url(r'^tw_perm/QA/', tw_views.qa_page, name='qa_page'),
-    url(r'^tw_perm/working/', tw_views.working, name='working'),
+    url(r'^tw_perm/QA/$', tw_views.qa_page, name='qa_page'),
+    url(r'^tw_perm/working/$', tw_views.working, name='working'),
     url(r'^test/', views.test, name='test'),
     url(r'^test2/', views.test2, name='test2'),
 ]

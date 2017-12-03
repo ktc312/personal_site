@@ -1,49 +1,49 @@
 ,Count,Salary
-count,,8695.0
-mean,,74093.7584209
-std,,29923.4503655
+count,,8974.0
+mean,,74401.695809
+std,,30169.8223531
 min,,12000.0
-25%,,52184.7
-50%,,70013.0
-75%,,90792.0
+25%,,52338.25
+50%,,70366.0
+75%,,91452.45
 max,,315000.0
-CA,4177.0,
-NY,913.0,
-TX,647.0,
-WA,330.0,
-NJ,299.0,
-IL,223.0,
-MA,197.0,
-OR,175.0,
-FL,163.0,
-VA,132.0,
+CA,4309.0,
+NY,937.0,
+TX,666.0,
+WA,347.0,
+NJ,303.0,
+IL,232.0,
+MA,201.0,
+OR,183.0,
+FL,173.0,
+VA,133.0,
+NH,,99556.5555556
 AK,,91998.4
-NH,,91476.0
 VT,,90251.0
 DE,,89403.4933333
-WA,,87816.4445455
-OR,,86628.8468571
-CT,,85458.3275862
+WA,,89022.8845821
+OR,,87046.1486339
+CT,,85929.4745763
 SD,,85000.0
-NV,,83259.5407143
-MA,,80802.3253807
-Intel Corporation,200.0,
-Microsoft Corporation,130.0,
-Google Inc.,114.0,
-Super Micro Computer Inc.,65.0,
-Apple Inc.,59.0,
+NV,,82901.9713333
+MA,,80524.8164179
+Intel Corporation,209.0,
+Microsoft Corporation,137.0,
+Google Inc,119.0,
+Super Micro Computer Inc,65.0,
+Apple Inc,65.0,
 Broadcom Corporation,56.0,
-Yahoo Inc.,46.0,
-Oracle America Inc.,43.0,
-Qualcomm Technologies Inc.,41.0,
-Wafertech LLC.,39.0,
+Qualcomm Technologies Inc,55.0,
+Yahoo Inc,47.0,
+Oracle America Inc,45.0,
+Wafertech LLC,39.0,
 Cleveland Clinic Foundation,,315000.0
 Trinity Health - Michigan D/b/a Saint Mary's Healt,,300000.0
-Guam Healthcare Development Inc.,,250000.0
+Guam Healthcare Development Inc,,250000.0
 Apogee Medical Group Inc,,240000.0
-Vhm Servicesinc. Dba Metrowest Physician Services,,230000.0
-Haynes And Boone LLP.,,230000.0
-White & Case LLP.,,230000.0
+Vhm Servicesinc Dba Metrowest Physician Services,,230000.0
+White & Case LLP,,230000.0
+Haynes And Boone LLP,,230000.0
 Pulmonary & Medical Associates Of Northern Va,,223163.0
 Prophetstor Data Services Inc,,220251.0
 Netflix,,220000.0

@@ -97,8 +97,6 @@ def index(request):
         context['approved_perm'] = summarize_main[1].split('.')[0]
         context['ny_perm'] = summarize_main[2].split('.')[0]
         context['end_year'] = summarize_main[3]
-        print type(summarize_main[4])
-        print calendar.month_name[int(summarize_main[4])]
         context['end_mon'] = calendar.month_name[int(summarize_main[4])]
     except:
         e = sys.exc_info()[0]

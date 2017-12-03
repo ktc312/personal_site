@@ -9,7 +9,7 @@ import pandas as pd
 import time
 import data_cleaning
 
-data_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'tw_perm_data_analysis/')
+data_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'perm_data_analysis/')
 
 # Construct the visadoor search url
 base_url = str('http://visadoor.com/greencards/index?country=Taiwan&submit=Search')
@@ -29,7 +29,6 @@ def get_last_year():
     sorted_df = tw_perm_df.sort_values('Decision_Date', ascending=True)
     return str(sorted_df.iloc[[-1]]['Decision_Date']).split('-')[0][-4:]
 
-get_last_year()
 
 # get cases found
 def get_cases_found(last_year):

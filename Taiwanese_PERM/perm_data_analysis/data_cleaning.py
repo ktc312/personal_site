@@ -3,17 +3,15 @@ import pandas as pd
 import numpy as np
 import os
 
-data_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'tw_perm_data_analysis/')
+data_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'perm_data_analysis/')
 
-# Read the CSV file (cities)
-ny_cities_df = pd.read_csv(data_path + 'data/NY_cities.csv', names='c', dtype=str)
-ny_cities = []
-for x in ny_cities_df['c']:
-    ny_cities.append(x)
-bay_cities_df = pd.read_csv(data_path + 'data/Bay_Area_cities.csv', names='city', dtype=str)
-bay_cities = []
-for x in bay_cities_df['c']:
-    bay_cities.append(x)
+
+def get_city_names(area_csv):
+    cities_df = pd.read_csv(data_path + 'data/' + area_csv, names='city', dtype=str)
+    cities_name = []
+    for name in cities_df['c']:
+        cities_name.append(name)
+    return cities_name
 
 
 # Convert DateTime
@@ -64,7 +62,7 @@ def clean_case_status(input_data, input_status):
 
 
 # Separate State and City
-def separate_tate_city(input_data, input_region):
+def separate_state_city(input_data, input_region):
     city = []
     state = []
     for s_c in input_data[input_region]:
@@ -84,13 +82,9 @@ def separate_tate_city(input_data, input_region):
 # Clean employer name
 def clean_employer_name(input_data, input_employer):
     com_list = []
-    com_list_2 = []
     for employer in input_data[input_employer]:
-        com_list.append(employer.replace(',', ''))
-    for com in com_list:
-        com_list_2.append(com.replace('!', ''))
-
-    input_data['Company'] = np.asarray(com_list_2)
+        com_list.append(employer.replace(',', '').replace('!', '').replace('.', ''))
+    input_data['Company'] = np.asarray(com_list)
     input_data.drop(input_employer, axis=1, inplace=True)
 
 
@@ -101,12 +95,12 @@ def add_area(input_data, input_region):
         city = s_c.split(',')[0].upper()
         state = s_c.split(',')[1][1:3].upper()
         if state in ('NY', 'NJ', 'CT'):
-            if city in ny_cities:
+            if city in get_city_names('NY_cities.csv'):
                 area.append('New York Metro')
             else:
                 area.append('-999')
         elif state == 'CA':
-            if city in bay_cities:
+            if city in get_city_names('Bay_Area_cities.csv'):
                 area.append('Bay Area')
             else:
                 area.append('-999')

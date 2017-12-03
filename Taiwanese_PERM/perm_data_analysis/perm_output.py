@@ -5,7 +5,7 @@ import sys
 import matplotlib.pyplot as plt
 import data_cleaning
 
-data_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'tw_perm_data_analysis/')
+data_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'perm_data_analysis/')
 
 
 def update_summarize_main(input_data):

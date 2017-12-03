@@ -1,19 +1,49 @@
 ,Count,Salary
-count,,3.0
-mean,,119224.0
-std,,8072.57877013
-min,,110000.0
-25%,,116336.0
-50%,,122672.0
-75%,,123836.0
-max,,125000.0
-CA,2.0,
-NV,1.0,
-CA,,123836.0
-NV,,110000.0
-Aruze Gaming America Inc.,1.0,
-Ooyala Inc.,1.0,
-Sandisk Corporation,1.0,
-Ooyala Inc.,,125000.0
-Sandisk Corporation,,122672.0
-Aruze Gaming America Inc.,,110000.0
+count,,277.0
+mean,,83821.8545848
+std,,35710.0601754
+min,,17056.0
+25%,,55310.0
+50%,,85342.0
+75%,,110000.0
+max,,200000.0
+CA,129.0,
+NY,24.0,
+TX,19.0,
+WA,17.0,
+NC,11.0,
+FL,10.0,
+IL,9.0,
+OR,8.0,
+MD,5.0,
+IN,4.0,
+NH,,127838.5
+PA,,116642.333333
+CT,,113256.0
+WA,,112442.014706
+OR,,96174.625
+CA,,95532.7943411
+NV,,93948.0
+IN,,91192.5
+VA,,90646.0
+ID,,85342.0
+Qualcomm Technologies Inc,14.0,
+Defender Services Inc,9.0,
+Pure Beauty Farms Inc,8.0,
+Intel Corporation,8.0,
+Microsoft Corporation,7.0,
+Apple Inc,6.0,
+Google Inc,5.0,
+Amazon Corporate Llc,5.0,
+Facebook Inc,4.0,
+Synopsys Inc,3.0,
+University Of Pennsylvania,,200000.0
+Lotadata Inc,,173056.0
+Loves7 Llc,,152277.0
+Apple Inc,,143571.5
+University Of California Davis,,142082.0
+Sojern Inc,,135000.0
+Sharp Electronics Corporation D/b/a Sharp Microelectronics Of Th,,133515.0
+Fastmaker Llc,,133000.0
+Facebook Inc,,131646.8125
+Western Digital (fremont) Llc,,130728.0
