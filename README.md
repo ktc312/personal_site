@@ -1,3 +1,3 @@
-# personal_site
+# www.ktcdata.com
 
 Personal website built with Django.
