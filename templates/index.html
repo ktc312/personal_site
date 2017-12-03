@@ -1,0 +1,219 @@
+<!doctype html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="Kuang-Ting Chang's personal website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Kuang-Ting Chang</title>
+        {% load static from staticfiles %}
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'main/img/favicon.ico' %}" />
+        <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'main/css/animate.css' %}">
+        <link rel="stylesheet" href="{% static 'main/css/responsive.css' %}">
+    </head>
+
+    <body>
+        <section class="banner" role="banner">
+            <header id="header">
+                <div class="header-content clearfix">
+                    <a class="logo" href="#">K.T. Chang</a>
+                    <nav class="navigation" role="navigation">
+                        <ul class="primary-nav">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="nav-toggle">Menu<span></span></a>
+                </div>
+            </header>
+            <div class="container">
+                <div class="col-md-7 banner-inner-wrapper">
+                    <div class="banner-text">
+                        <h1>I'm K.T. Chang. A Data Analyst</h1>
+                        <p>this is my one page resume/portfolio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section introduction">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="intro-content">
+                            <h2>I am a ????? Data Analyst.</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-6">
+                        <div class="intro-content">
+                            <p>
+                                I have huge interest in the field of Data Analysis, Quantitative Research and
+                                Software Engineering, currently looking for a full time position.
+                            </p>
+                            <p>
+                                I have intensive experience in as data analyst using SAS and Python, I provided
+                                technical support to formulate statistical model and to interpret real-world
+                                data assisting clients with market decision. I have extensive experience in data
+                                cleaning, analysis and visualization.
+                            </p>
+                            <p>
+                               I also have experience in developing web apps with Python. From back end to front end,
+                               from function algorithm to user registration system.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="intro-content">
+                            <h4>my expertise</h4>
+                            <ul>
+                                <li> - Advanced Python</li>
+                                <ul>
+                                    <li> - Numpy, Pandas and Matplotlib</li>
+                                    <li> - Django Web Framework</li>
+                                    <li> - HTML, CSS and JavaScript</li>
+                                </ul>
+                                <li> - Advanced SAS</li>
+                                <ul>
+                                    <li> - Converting/Reshaping Datasets</li>
+                                    <li> - Data Cleaning and Visualization</li>
+                                    <li> - Linear/Non-Linear Regression Modeling</li>
+                                </ul>
+                                <li> - R</li>
+                                <li> - STATA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="animate-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+                        <h2>Projects</h2>
+                        <p>My side projects, school projects.</p>
+                    </div>
+                    <div class="col-md-6 text-center item-block">
+                        <span class="icon"><img src="{% static 'test/img/30.svg' %}"
+                                                alt="Free HTML5 Templates" class="img-responsive"></span>
+                        <h3>Salary Analysis</h3>
+                        <p>
+                            Description, description description description description description. Description,
+                            description description description description description. Description, description
+                            description description description description. Description, description description
+                            description description description.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary btn-outline with-arrow">
+                                Learn more <i class="icon-arrow-right"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center item-block">
+                        <span class="icon"><img src="{% static 'test/img/18.svg' %}"
+                                                alt="Free HTML5 Templates" class="img-responsive"></span>
+                        <h3>Stock price analysis</h3>
+                        <p>
+                            Description, description description description description description. Description,
+                            description description description description description. Description, description
+                            description description description description. Description, description description
+                            description description description.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary btn-outline with-arrow">
+                                Learn more <i class="icon-arrow-right"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center item-block">
+                        <span class="icon"><img src="{% static 'test/img/18.svg' %}"
+                                                alt="Free HTML5 Templates" class="img-responsive"></span>
+                        <h3>Regression for dummies</h3>
+                        <p>
+                            Description, description description description description description. Description,
+                            description description description description description. Description, description
+                            description description description description. Description, description description
+                            description description description.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary btn-outline with-arrow">
+                                Learn more <i class="icon-arrow-right"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center item-block">
+                        <span class="icon"><img src="{% static 'test/img/27.svg' %}"
+                                                alt="Free HTML5 Templates" class="img-responsive"></span>
+                        <h3>Master's Thesis</h3>
+                        <p>
+                            Description, description description description description description. Description,
+                            description description description description description. Description, description
+                            description description description description. Description, description description
+                            description description description.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary btn-outline with-arrow">
+                                Learn more <i class="icon-arrow-right"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer id="contact" class="footer">
+            <div class="container">
+                <div class="col-md-12 text-center fh5co-heading" style="margin-bottom: 30px">
+                    <h2>Contact</h2>
+                </div>
+                <div class="col-md-12" style="text-align: center;">
+                    <img class="img-circle" src="{% static 'main/img/profile_pic.jpg' %}">
+                    <h4 style="margin-top: 15px;">Kuang-Ting Chang</h4>
+{#                    <h4 style="margin-top: 15px;">Find me at: </h4>#}
+                    <ul class="footer-share">
+                        <li>
+                            <a target="_blank" href="mailto:ktchang@genesisrg.com">
+                                <img class="img-icon" src="{% static 'main/img/icons/envelope.png' %}">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/in/ktc312">
+                                <img class="img-icon" src="{% static 'main/img/icons/linkedin-sign.png' %}">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://github.com/ktc312">
+                                <img class="img-icon" src="{% static 'main/img/icons/github-sign.png' %}">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://stackoverflow.com/users/7003603/kt-chang">
+                                <img class="img-icon" src="{% static 'main/img/icons/stack-exchange-symbol.png' %}">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+     <footer>
+		<div class="copyrights wrapper">
+            <br>
+            Copyright © Kuang-Ting Chang, 2017
+            <br>
+            Made with Django and <a style="color: darkgray" href="http://www.designstub.com/">Designstub</a>
+            <br>
+            Icons designed by Dave Gandy from
+            <a style="color: darkgray" href='https://www.flaticon.com/authors/dave-gandy'>Flaticon</a>
+            <br>
+		</div>
+    </footer>
+    </body>
+    <script type="text/javascript" src="{% static "main/js/jquery.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "main/js/main.js" %}"></script>
+</html>

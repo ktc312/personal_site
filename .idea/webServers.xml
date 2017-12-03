@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="666a4c9b-9785-4dec-91e6-cbf3ac432563" name="Ubuntu" url="http://www.ktcdata.com">
+        <fileTransfer host="www.ktcdata.com" port="22" rootFolder="/var/www/Django_apps" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
