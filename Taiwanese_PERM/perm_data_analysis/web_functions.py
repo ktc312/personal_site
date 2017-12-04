@@ -3,7 +3,7 @@ import os
 import locale
 
 
-locale.setlocale(locale.LC_ALL, 'en_US')
+# locale.setlocale(locale.LC_ALL, 'en_US')
 data_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'perm_data_analysis/')
 
 

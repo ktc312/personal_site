@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
         <link rel="stylesheet" href="{% static 'main/css/animate.css' %}">
         <link rel="stylesheet" href="{% static 'main/css/responsive.css' %}">
+
     </head>
 
     <body>
@@ -32,8 +33,8 @@
             <div class="container">
                 <div class="col-md-7 banner-inner-wrapper">
                     <div class="banner-text">
-                        <h1>I'm K.T. Chang. A Data Analyst</h1>
-                        <p>this is my one page resume/portfolio.</p>
+                        <h1>I'm K.T. Chang. A Data Analyst.</h1>
+                        <p>M.A. Applied Quantitative Research | New York University, 2015</p>
                     </div>
                 </div>
             </div>
@@ -44,7 +45,9 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="intro-content">
-                            <h2>I am a ????? Data Analyst.</h2>
+                            <h2>{Data,<br>
+                                 &#160Python,<br>
+                                 &#160SAS}</h2>
                         </div>
                     </div>
                     <div class="col-md-5 col-sm-6">
@@ -54,10 +57,9 @@
                                 Software Engineering, currently looking for a full time position.
                             </p>
                             <p>
-                                I have intensive experience in as data analyst using SAS and Python, I have
-                                extensive experience in data cleaning, analysis and visualization. I also have
-                                experience in developing web apps with Python. From back end to front end, from
-                                function algorithm to user registration system.
+                                I have intensive experience in as data analyst using SAS and Python; data cleaning,
+                                analysis and visualization. I also have experience in developing web apps with Django.
+                                From back end to front end, from function algorithm to user registration system.
                             </p>
                         </div>
                     </div>
@@ -91,20 +93,18 @@
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
                         <h2>Projects</h2>
-                        <p>My side projects, school projects.</p>
+                        <p>My side projects and school projects.</p>
                     </div>
                     <div class="col-md-6 text-center item-block">
                         <span class="icon"><img src="{% static 'main/img/bar-chart-1.png' %}" class="img-responsive">
                         </span>
                         <h3>Salary Analysis</h3>
-                        <p>
-                            Description, description description description description description. Description,
-                            description description description description description. Description, description
-                            description description description description. Description, description description
-                            description description description.
+                        <p style="text-align: left">
+                            Using Python to scrape data from target website, cleaning and analyzing data using Pandas.
+                            visualizing and presenting results using Django Web Frame and JavaScript.
                         </p>
                         <p>
-                            <a href="/tw_perm" class="btn btn-primary btn-outline with-arrow">
+                            <a target="_blank" href="/tw_perm" class="btn btn-primary btn-outline with-arrow">
                                 Learn more <i class="icon-arrow-right"></i>
                             </a>
                         </p>
@@ -112,12 +112,11 @@
                     <div class="col-md-6 text-center item-block">
                         <span class="icon"><img src="{% static 'main/img/bar-chart.png' %}" class="img-responsive">
                         </span>
-                        <h3>Stock price analysis</h3>
-                        <p>
-                            Description, description description description description description. Description,
-                            description description description description description. Description, description
-                            description description description description. Description, description description
-                            description description description.
+                        <h3>Stock price forecasting with ARIMA model</h3>
+                        <p style="text-align: left">
+                            Developed a Python GUI application to conduct financial time series data forecasting
+                            using ARIMA predictive statistics model; utilize the package of Yahoo Finance to import
+                            the real-time financial data through the supported API.
                         </p>
                         <p>
                             <a href="#" class="btn btn-primary btn-outline with-arrow">
@@ -129,11 +128,10 @@
                         <span class="icon"><img src="{% static 'main/img/bar-chart-2.png' %}" class="img-responsive">
                         </span>
                         <h3>Regression for dummies</h3>
-                        <p>
-                            Description, description description description description description. Description,
-                            description description description description description. Description, description
-                            description description description description. Description, description description
-                            description description description.
+                        <p style="text-align: left">
+                            Performing complex numerical analysis tasks with Numpy and pandas, producing high quality
+                            data visualizations using Matplotlib, demonstrating basic regression analysis of the data
+                            that users uploaded.
                         </p>
                         <p>
                             <a href="#" class="btn btn-primary btn-outline with-arrow">
@@ -145,11 +143,10 @@
                         <span class="icon"><img src="{% static 'main/img/analytics.png' %}" class="img-responsive">
                         </span>
                         <h3>Master's Thesis</h3>
-                        <p>
-                            Description, description description description description description. Description,
-                            description description description description description. Description, description
-                            description description description description. Description, description description
-                            description description description.
+                        <p style="text-align: left">
+                            “The Effect of Mothers’ Educational Attainment on Children’s School Performance”. Using
+                            STATA to analyze the data from the Fragile Families and Child Well-being Study to examine
+                            OLS regression, lagged dependent variable, and propensity score weighting models.
                         </p>
                         <p>
                             <a href="#" class="btn btn-primary btn-outline with-arrow">
@@ -209,7 +206,10 @@
             <br>
 		</div>
     </footer>
-    </body>
+
     <script type="text/javascript" src="{% static "main/js/jquery.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "main/js/jquery.fancybox.pack.js" %}"></script>
     <script type="text/javascript" src="{% static "main/js/main.js" %}"></script>
+
+    </body>
 </html>
