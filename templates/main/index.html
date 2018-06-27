@@ -1,0 +1,230 @@
+{% load static from staticfiles %}
+<!doctype html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="Kuang-Ting Chang's personal website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Kuang-Ting Chang</title>
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'main/img/favicon.ico' %}" />
+        <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'main/css/animate.css' %}">
+        <link rel="stylesheet" href="{% static 'main/css/responsive.css' %}">
+
+    </head>
+
+    <body>
+        <section class="banner" role="banner">
+            <header id="header">
+                <div class="header-content clearfix">
+                    <a class="logo" href="#">K.T. Chang</a>
+                    <nav class="navigation" role="navigation">
+                        <ul class="primary-nav">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="nav-toggle">Menu<span></span></a>
+                </div>
+            </header>
+            <div class="container">
+                <div class="col-md-7 banner-inner-wrapper">
+                    <div class="banner-text">
+                        <h1>I'm K.T. Chang. A Data Scientist.</h1>
+                        <p>M.A. Applied Quantitative Research | New York University, 2015</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section introduction">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="intro-content">
+                            <h2>{Data,<br>
+                                 &#160Python,<br>
+                                 &#160SAS}</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-6">
+                        <div class="intro-content">
+                            <p>
+                                I have huge interest in the field of Data Analysis, Quantitative Research and
+                                Software Engineering, currently looking for a full time position.
+                            </p>
+                            <p>
+                                I have intensive experience in data analytics using SAS and web crawling, data
+                                modeling and data visualization using Python. I am also a experienced full-stack
+                                web app developer using Django.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="intro-content">
+                            <h4>my expertise</h4>
+                            <ul>
+                                <li> - Advanced Python</li>
+                                <ul>
+                                    <li> - Numpy, Pandas and Matplotlib</li>
+                                    <li> - Django Web Framework</li>
+                                    <li> - HTML, CSS and JavaScript</li>
+                                </ul>
+                                <li> - Advanced SAS</li>
+                                <ul>
+                                    <li> - Converting/Reshaping Datasets</li>
+                                    <li> - Data Cleaning and Visualization</li>
+                                    <li> - Linear/Non-Linear Regression Modeling</li>
+                                </ul>
+                                <li> - SQL</li>
+                                <li> - R</li>
+                                <li> - STATA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="animate-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center fh5co-heading" style="margin-bottom: 50px">
+                        <h2>Projects</h2>
+{#                        <p>My side projects and school projects.</p>#}
+                    </div>
+                    <div class="col-md-6 text-center item-block">
+                        <span class="icon"><img src="{% static 'main/img/bar-chart-1.png' %}" class="img-responsive">
+                        </span>
+                        <h3>Data Analysis Example</h3>
+                        <p style="text-align: left">
+                            Python data analysis example showcasing on Jupyter Notebook,
+                            specifically in cleaning, reshaping and analyzing with numpy, pandas and scipy,
+                            visualizing with matplotlib.
+                        <p>
+                            <a target="_blank" href="https://nbviewer.jupyter.org/github/ktc312/Data-Analysis-Example/blob/master/Taiwanese%20PERM%20data%20anaylsis.ipynb"
+                                                class="btn btn-primary btn-outline with-arrow">
+                                Learn more <i class="icon-arrow-right"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center item-block">
+                        <span class="icon"><img src="{% static 'main/img/bar-chart-6.png' %}" class="img-responsive">
+                        </span>
+                        <h3>Salary Analysis</h3>
+                        <p style="text-align: left">
+                            Using Python to scrape data from Visadoor website. Cleaned and analyzed data using Pandas,
+                            while visualizing and presenting results using Django Web Frame and JavaScript.
+                        </p>
+                        <p>
+                            <a target="_blank" href="/tw_perm" class="btn btn-primary btn-outline with-arrow">
+                                Learn more <i class="icon-arrow-right"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center item-block">
+                        <span class="icon"><img src="{% static 'main/img/bar-chart.png' %}" class="img-responsive">
+                        </span>
+                        <h3>Stock price forecasting with ARIMA model</h3>
+                        <p style="text-align: left">
+                            Developed a Python GUI application to conduct financial time series data forecasting
+                            using ARIMA predictive statistics model; utilize the package of Yahoo Finance API to
+                            import the real-time financial data.
+                        </p>
+                        <p>
+                            <a target="_blank" href="/stock_project/" class="btn btn-primary btn-outline with-arrow">
+                                Learn more <i class="icon-arrow-right"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center item-block">
+                        <span class="icon"><img src="{% static 'main/img/bar-chart-2.png' %}" class="img-responsive">
+                        </span>
+                        <h3>Regression for dummies</h3>
+                        <p style="text-align: left">
+                            Performing complex numerical analysis tasks with Numpy and pandas, producing high quality
+                            data visualizations using Matplotlib, demonstrating basic regression analysis of the data
+                            that users uploaded.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary btn-outline with-arrow">
+                                Learn more <i class="icon-arrow-right"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center item-block">
+                        <span class="icon"><img src="{% static 'main/img/analytics.png' %}" class="img-responsive">
+                        </span>
+                        <h3>Master's Thesis</h3>
+                        <p style="text-align: left">
+                            “The Effect of Mothers’ Educational Attainment on Children’s School Performance”. Using
+                            STATA to analyze the data from the Fragile Families and Child Well-being Study to examine
+                            OLS regression, lagged dependent variable, and propensity score weighting models.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+{#        <div style="height:400px; width:100%; clear:both;"></div>#}
+
+        <section id="contact" class="footer">
+            <div class="container">
+                <div class="col-md-12 text-center fh5co-heading" style="margin-bottom: 30px">
+                    <h2>Contact</h2>
+                </div>
+                <div class="col-md-12" style="text-align: center;">
+                    <img class="img-circle" src="{% static 'main/img/profile_pic.jpg' %}">
+                    <h4 style="margin-top: 15px;">Kuang-Ting Chang</h4>
+{#                    <h4 style="margin-top: 15px;">Find me at: </h4>#}
+                    <ul class="footer-share">
+                        <li>
+                            <a target="_blank" href="mailto:ktchang@genesisrg.com">
+                                <img class="img-icon" src="{% static 'main/img/icons/envelope.png' %}">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/in/ktc312">
+                                <img class="img-icon" src="{% static 'main/img/icons/linkedin-sign.png' %}">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://github.com/ktc312">
+                                <img class="img-icon" src="{% static 'main/img/icons/github-sign.png' %}">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://stackoverflow.com/users/7003603/kt-chang">
+                                <img class="img-icon" src="{% static 'main/img/icons/stack-exchange-symbol.png' %}">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div style="height:150px; width:100%; clear:both;"></div>
+
+        <footer>
+            <div class="copyrights wrapper">
+                <br>
+                Copyright © Kuang-Ting Chang, 2017
+                <br>
+                Made with Django and <a style="color: darkgray" href="http://www.designstub.com/">Designstub</a>
+                <br>
+                Icons designed by Dave Gandy and Maxim Basinski from
+                <a style="color: darkgray" href='https://www.flaticon.com'>Flaticon</a>
+                <br>
+            </div>
+        </footer>
+
+    <script type="text/javascript" src="{% static "main/js/jquery.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "main/js/jquery.fancybox.pack.js" %}"></script>
+    <script type="text/javascript" src="{% static "main/js/main.js" %}"></script>
+
+    </body>
+</html>

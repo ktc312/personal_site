@@ -1,0 +1,31 @@
+,Count,Salary
+count,,67.0
+mean,,112670.346269
+std,,24540.2924683
+min,,46500.0
+25%,,103116.0
+50%,,113000.0
+75%,,124406.0
+max,,173056.0
+CA,67.0,
+CA,,112670.346269
+Apple Inc,6.0,
+Google Inc,4.0,
+Mediatek Usa Inc,3.0,
+Synopsys Inc,3.0,
+Ase (us) Inc,2.0,
+Uber Technologies Inc,2.0,
+Dorado-da North America Inc,2.0,
+Facebook Inc,2.0,
+Qualcomm Atheros Inc,2.0,
+Solarcity,1.0,
+Lotadata Inc,,173056.0
+Facebook Inc,,146573.5
+Apple Inc,,143571.5
+Applied Materials Inc,,135660.0
+Sojern Inc,,135000.0
+Texas Instruments Incorporated,,131955.0
+Western Digital (fremont) Llc,,130728.0
+Qualcomm Atheros Inc,,128971.0
+Ching Hsin Wong Dds Inc,,125143.0
+Ooyala Inc,,125000.0
