@@ -141,4 +141,3 @@ media/
 
 db.sqlite3
 ktcdata/settings.py
-manage.py

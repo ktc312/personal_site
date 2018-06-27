@@ -2,4 +2,4 @@
 
 Personal website built with Django.
 
-needs: db.sqlite3, ktcdata/settings.py, and manage.py
+needs: db.sqlite3 and ktcdata/settings.py
