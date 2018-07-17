@@ -29,6 +29,14 @@ def stock_project(request):
         return response
 
 
+def regression_for_dummies(request):
+    logging.info(request)
+    with open(os.path.join(BASE_DIR, 'static/main/data/Regression_for_dummies_example.pdf'), 'rb') as pdf:
+        response = HttpResponse(pdf.read(), content_type='application/pdf')
+        response['Content-Disposition'] = 'inline;filename=ktc_project.pdf'
+        return response
+
+
 def resume(request):
     logging.info(request)
     with open(os.path.join(BASE_DIR, 'static/main/Resume_KTC.pdf'), 'rb') as pdf:

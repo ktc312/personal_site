@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^login/$', auth_views.login, name='login'),
     url(r'^logout/$', auth_views.logout, name='logout'),
     url(r'^stock_project/$', views.stock_project, name='stock_project'),
+    url(r'^regression_for_dummies/$', views.regression_for_dummies, name='regression_for_dummies'),
     url(r'^tw_perm/$', tw_views.index, name='tw_index'),
     url(r'^tw_perm/QA/$', tw_views.qa_page, name='qa_page'),
     url(r'^tw_perm/working/$', tw_views.working, name='working'),
